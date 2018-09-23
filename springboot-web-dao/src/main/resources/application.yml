@@ -1,0 +1,14 @@
+#mysql 数据源
+spring:
+  datasource:
+    url: jdbc:mysql://localhots:3306/springboot
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*.Mapper.xml
+  type-aliases-package: com.ywb.springbootwebdao.io.model
+
+  #服务启动端口号
+server:
+  port: 8082

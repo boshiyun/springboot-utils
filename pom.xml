@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ywb</groupId>
+    <artifactId>springboot-base-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>springbootbaseparent</name>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.encoding>UTF-8</project.encoding>
+        <springboot.version>2.0.5.RELEASE</springboot.version>
+        <poi.version>3.15</poi.version>
+        <springboot-web.version>0.0.1-SNAPSHOT</springboot-web.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--spring boot mybatis 依赖-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+
+            <!--mysql 连接驱动依赖-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.47</version>
+            </dependency>
+
+            <!-- mybatis-generator-core 反向生成java代码-->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>1.3.5</version>
+            </dependency>
+            <!--read Excel-->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+
+            <!--springboot-web version-->
+            <dependency>
+                <groupId>com.ywb</groupId>
+                <artifactId>springboot-web-bean</artifactId>
+                <version>${springboot-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ywb</groupId>
+                <artifactId>springboot-web-dao</artifactId>
+                <version>${springboot-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ywb</groupId>
+                <artifactId>springboot-web-service</artifactId>
+                <version>${springboot-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ywb</groupId>
+                <artifactId>springboot-web-controller</artifactId>
+                <version>${springboot-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ywb</groupId>
+                <artifactId>springboot-web-utils</artifactId>
+                <version>${springboot-web.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <modules>
+        <module>springboot-web-service</module>
+        <module>springboot-web-dao</module>
+        <module>springboot-web-controller</module>
+        <module>springboot-web-bean</module>
+        <module>springboot-web-utils</module>
+    </modules>
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <resources>
+            <!--把src/main/resources目录下所有文件copy到conf目录下-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <targetPath>${project.build.directory}/conf</targetPath>
+            </resource>
+            <!-- 把lib目录下所有的文件拷贝到lib目录中
+            （可能有些jar包没有办法在maven中找到，需要放在lib目录中） -->
+            <resource>
+                <directory>lib</directory>
+                <targetPath>${project.build.directory}/lib</targetPath>
+            </resource>
+            <!-- 把放在根目录下的脚本文件.sh,.bat拷贝到bin目录中 -->
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>**/*.sh</include>
+                    <include>**/*.bat</include>
+                </includes>
+                <targetPath>${project.build.directory}/bin</targetPath>
+            </resource>
+        </resources>
+        <plugins>
+            <!--用于生成jar包的plugin-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <fork>true</fork>
+                    <!--<defaultLibBundleDir>lib</defaultLibBundleDir>-->
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- 方式一：使用 maven-jar-plugin、maven-dependency-plugin 打包-->
+            <!--用于copy maven 依赖的plugin-->
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                    <excludes>
+                        <exclude>*.xml</exclude>
+                        <exclude>*.properties</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            &lt;!&ndash;方式一：使用&ndash;&gt;
+            &lt;!&ndash;用于编译的plugin&ndash;&gt;
+            <plugin>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            &lt;!&ndash;把依赖的所有 maven jar 包 copy 到 lib 目录下（这样所有的 jar 包都在 lib 目录中）&ndash;&gt;
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+            </plugin>
+            &lt;!&ndash;用于copy resource 的 plugin&ndash;&gt;
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            &lt;!&ndash;配置生成源代码 jar 的 plugin&ndash;&gt;
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <attach>true</attach>
+                    <encoding>UTF-8</encoding>
+                    &lt;!&ndash;配置源代码 jar 文件的存放路径，和其他 jar 文件一起放在 lib 目录&ndash;&gt;
+                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+
+            <!--方式二：使用 maven-assembly-plugin 插件打包-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <!--打包文件名字不包含 assembly.xml 中 id-->
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptors>
+                        <!--打包配置-->
+                        <descriptor>src/main/resources/assembly/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+
+                        <!--表示在执行 package 打包时，执行 assembly:single，所以可以 maven package 打包-->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

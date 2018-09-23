@@ -1,0 +1,10 @@
+#设置启动端口
+server:
+  port: 8084
+
+#读取 excel 文件的路径
+#com.ywb.io.readurl = D:\\WORKSPACE\\userInformation.xls
+com:
+  ywb:
+    io:
+      readurl: D:\\WORKSPACE\\userInformation.xls
