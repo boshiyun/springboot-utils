@@ -1,6 +1,5 @@
 package com.ywb.springbootwebutils.io.utils;
 
-import com.ywb.springbootwebdao.io.dao.UserInforMapper;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -9,14 +8,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
-@Service
 public class ReadExcelUtil {
 
     private static final Logger log = LoggerFactory.getLogger(ReadExcelUtil.class);
@@ -24,8 +21,7 @@ public class ReadExcelUtil {
     @Value("${com.ywb.io.readurl}")
     private String filePath;
 
-    @Autowired
-    private UserInforMapper userInforMapper;
+
 
 
     public List<Object[]> readExcel() {

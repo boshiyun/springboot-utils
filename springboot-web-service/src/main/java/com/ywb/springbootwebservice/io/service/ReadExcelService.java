@@ -5,22 +5,22 @@ import com.ywb.springbootwebdao.io.model.UserInfor;
 import com.ywb.springbootwebutils.io.utils.ReadExcelUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 @Service
 public class ReadExcelService {
 
     private static final Logger log = LoggerFactory.getLogger(ReadExcelService.class);
 
-    @Autowired
+    @Resource
     private UserInforMapper userInforMapper;
 
 

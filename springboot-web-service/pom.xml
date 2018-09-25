@@ -27,12 +27,9 @@
 
         <dependency>
             <groupId>com.ywb</groupId>
-            <artifactId>springboot-web-dao</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ywb</groupId>
             <artifactId>springboot-web-utils</artifactId>
         </dependency>
+
 
 
     </dependencies>
