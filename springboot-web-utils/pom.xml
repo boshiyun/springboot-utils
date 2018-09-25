@@ -45,11 +45,6 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
         </dependency>
-        <dependency>
-            <groupId>central.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>2.5.1-final-20040804</version>
-        </dependency>
 
         <!--依赖其他模块-->
         <dependency>
@@ -60,8 +55,6 @@
             <groupId>com.ywb</groupId>
             <artifactId>springboot-web-bean</artifactId>
         </dependency>
-
-
 
     </dependencies>
 
