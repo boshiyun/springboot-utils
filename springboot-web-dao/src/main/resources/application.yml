@@ -4,10 +4,10 @@ spring:
     url: jdbc:mysql://localhots:3306/springboot
     username: root
     password: root
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.alibaba.druid.pool.DruidDataSource
 mybatis:
-  mapper-locations: classpath:mapping/*.Mapper.xml
-  type-aliases-package: com.ywb.springbootwebdao.io.model
+  mapper-locations: classpath:mapping/*.xml    #对应mapper映射xml文件的所在路
+  type-aliases-package: com.ywb.springbootwebdao.io.model   #对应实体类的路径
 
   #服务启动端口号
 server:
