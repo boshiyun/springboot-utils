@@ -13,5 +13,11 @@
         <module name="springboot-web-utils" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven_thread_demo" target="1.7" />
+      <module name="spring_maven_thread" target="1.7" />
+      <module name="spring_maven_thread_demo" target="1.7" />
+      <module name="spring_thread_demo" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

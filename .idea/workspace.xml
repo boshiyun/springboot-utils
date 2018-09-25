@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be65eed2-d769-4337-bd7f-06fc5b4bff33" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-web-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-utils/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,6 +14,10 @@
     <ignored path="$PROJECT_DIR$/springboot-web-bean/target/" />
     <ignored path="$PROJECT_DIR$/springboot-web-service/target/" />
     <ignored path="$PROJECT_DIR$/springboot-web-utils/target/" />
+    <ignored path="$PROJECT_DIR$/spring_maven_thread/target/" />
+    <ignored path="$PROJECT_DIR$/spring_maven_thread_demo/target/" />
+    <ignored path="$PROJECT_DIR$/maven_thread_demo/target/" />
+    <ignored path="$PROJECT_DIR$/spring_thread_demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,68 +42,43 @@
     <session id="-1475304368">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="1" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="xml" value="1" />
+          <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="XML" value="1" />
+          <entry key="XML" value="32" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springboot-utils" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-web-utils/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-web-utils/src/main/java/com/ywb/springbootwebutils/io/utils/ReadExcelUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,7 +141,6 @@
         <option value="$PROJECT_DIR$/springboot-web-service/src/main/java/com/ywb/springbootwebservice/io/service/ReadExcelService.java" />
         <option value="$PROJECT_DIR$/springboot-web-controller/src/main/java/com/ywb/springbootwebcontroller/io/Controller/ReadExcelController.java" />
         <option value="$PROJECT_DIR$/springboot-web-service/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-web-utils/src/test/java/com/ywb/springbootwebutils/SpringbootWebUtilsApplicationTests.java" />
         <option value="$PROJECT_DIR$/springboot-web-bean/src/test/java/com/ywb/springbootwebbean/SpringbootWebBeanApplicationTests.java" />
         <option value="$PROJECT_DIR$/springboot-web-controller/src/test/java/com/ywb/springbootwebcontroller/SpringbootWebControllerApplicationTests.java" />
@@ -170,6 +149,8 @@
         <option value="$PROJECT_DIR$/springboot-web-utils/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springboot-web-dao/src/main/java/com/ywb/springbootwebdao/io/dao/UserInforMapper.java" />
         <option value="$PROJECT_DIR$/springboot-web-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_thread_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -183,7 +164,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\work\javamaven\springboot" />
-        <option name="userSettingsFile" value="D:\commonutils\apache-maven-3.3.9\conf\settings_springboot.xml" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../CommonUtils/Maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\work\CommonUtils\Maven\apache-maven-3.5.4\conf\settings_springboot.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -194,35 +176,33 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springbootbaseparent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springbootbaseparent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
+  <component name="MavenRunner">
+    <option name="mavenProperties">
+      <map>
+        <entry key="archetypeCatalog" value="internal" />
+      </map>
+    </option>
+    <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$MAVEN_HOME" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="700" />
-    <option name="y" value="37" />
-    <option name="width" value="1133" />
-    <option name="height" value="983" />
+    <option name="y" value="35" />
+    <option name="width" value="1135" />
+    <option name="height" value="985" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,55 +210,12 @@
               <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootwebutils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-web-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootwebutils" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,14 +226,15 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/WORKSPACE/springbootbaseparent/springboot-web-utils/src/main/java/com/ywb/springbootwebutils/io/ReadExcel.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537884650624" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537889227026" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8 (1)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -496,24 +434,27 @@
       <workItem from="1537317967773" duration="7008000" />
       <workItem from="1537406582094" duration="15291000" />
       <workItem from="1537695632809" duration="3668000" />
+      <workItem from="1537884800998" duration="3156000" />
+      <workItem from="1537888017336" duration="1309000" />
+      <workItem from="1537889406341" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82161000" />
+    <option name="totallyTimeSpent" value="87457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27479893" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.28150135" />
+      <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.2774799" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.50070924" side_tool="true" weight="0.2774799" />
+      <window_info id="Web" order="6" sideWeight="0.50070924" side_tool="true" weight="0.2774799" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3291592" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49932975" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3291592" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.35778177" />
@@ -522,11 +463,11 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3291592" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3291592" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -536,7 +477,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32983023" />
-      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.17225201" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.18230563" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24818109" />
@@ -584,13 +525,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-web-service/src/main/java/com/ywb/springbootwebservice/SpringbootWebServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assembly/assembly.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -798,33 +732,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-web-utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-web-utils/src/main/java/com/ywb/springbootwebutils/io/utils/ReadExcelUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-web-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_maven_thread/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/maven_thread_demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring_thread_demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring_maven_thread_demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="124" column="42" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -839,7 +773,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -882,12 +815,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springboot-web-utils</last-edited>
+          <last-edited>maven_thread_demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
